@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Statistics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ec46e56296.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link href="dist/css/statistics.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/pndstatistics.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="Statistics">
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-2">
+                <div class="loadingio-spinner-spinner-art3tky5m7i">
+                  <div class="ldio-7oddrx3nvc2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-10">
+                <div style="font-size: 19px; margin-top: 10px;">
+                  Loading Your Statistics
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainloader">
+      <div style="width: 100%;">
+        <div class="panel">
+          <center>
+            <h2 style="color: crimson;">Your Statistics</h2>
+            <p>Today's Reports</p>
+          </center>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="form-group" align="center">
+                  <label class="toplabel">Total Orders</label>
+                  <div><p class="toplabels">{{totalOrder}}</p></div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="form-group" align="center">
+                  <label class="toplabel">Total Kilometers</label>
+                  <div><p class="toplabels">{{totalExtraKm}}km</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="panel orderlist" ng-repeat="row in StatisticsList">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label class="toplabel">{{row.orderNo}}</label> &nbsp;<span
+                  class="badge bg-green"
+                  >Delivered</span
+                >
+                <div class="row">
+                  <div class="col-xs-6" style="padding-bottom: 0px;">
+                    <div>
+                      <p class="toplabels">
+                        <b>Pick-Drop</b> : {{row.pndKM}}km
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xs-6"
+                    style="padding-bottom: 0px;"
+                    align="right"
+                  >
+                    <div>
+                      <p class="toplabels"><b>Extra</b> : {{row.extaKM}}km</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

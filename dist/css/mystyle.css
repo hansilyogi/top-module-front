@@ -1,0 +1,35 @@
+.animate-show-hide.ng-hide {
+    opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+    transition: all linear 0.5s;
+}
+
+.check-element {
+    border: 1px solid black;
+    opacity: 1;
+    padding: 10px;
+}
+
+.skin-purple-light .main-header .logo {
+    background-color: white;
+    color: #9b2f70;
+}
+
+.skin-purple-light .main-header .logo:hover {
+    background-color: white;
+    color: #605ca8
+}
+
+.skin-purple-light .main-header .navbar{
+    background-color: #412072;
+}
+@media only screen and (max-width: 768px) {
+    .counterhider {
+        display: none;
+    }
+}
+
+

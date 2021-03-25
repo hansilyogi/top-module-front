@@ -1,0 +1,4 @@
+[02-Jul-2020 06:27:34 UTC] PHP Warning:  include_once(headers/head.php): failed to open stream: No such file or directory in /home/demo/public_html/pnd/customers.php on line 1
+[02-Jul-2020 06:27:34 UTC] PHP Warning:  include_once(): Failed opening 'headers/head.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/demo/public_html/pnd/customers.php on line 1
+[24-Oct-2020 05:18:41 UTC] PHP Warning:  Use of undefined constant end_time - assumed 'end_time' (this will throw an Error in a future version of PHP) in /home/demo/public_html/pnd/appsettings.php on line 4
+[28-Oct-2020 06:56:43 UTC] PHP Warning:  Use of undefined constant start_time - assumed 'start_time' (this will throw an Error in a future version of PHP) in /home/demo/public_html/pnd/appsettings.php on line 76
